@@ -15,6 +15,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // デバッグバナーの表示・非表示を切り替える(デフォルトはtrueで表示する)
+      debugShowCheckedModeBanner: true,
     );
   }
 }
