@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sample_app/custom_app_bar.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 void main() {
@@ -46,9 +47,7 @@ class _WebViewAppState extends State<WebViewApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Flutter WebView'),
-      ),
+      appBar: const CustomAppBar(),
       body: WebViewWidget(
         controller: controller,
       ),
