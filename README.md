@@ -1,4 +1,19 @@
 # flutter_sample_app
+## Android
+### アプリケーションIDの変更方法
+`android/app/build.gradle`の`applicationId`を変更する。
+```
+defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId "com.flutter-sample-app"　// ここを変更する
+        // You can update the following values to match your application needs.
+        // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion flutter.targetSdkVersion
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+```
 ## YAMLファイルの情報
 ```yaml
 name: flutter_sample_app
